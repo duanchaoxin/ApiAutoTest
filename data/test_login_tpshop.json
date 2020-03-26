@@ -1,0 +1,8 @@
+[
+    {"username": "13800000000", "password": "123456", "verify_code": "8888", "status_code": 200, "status": 1,
+     "msg": "登陆成功"},
+    {"username": "13900138006", "password": "123456", "verify_code": "8888", "status_code": 200, "status": -1,
+     "msg": "账号不存在!"},
+    {"username": "13800000000", "password": "1234567", "verify_code": "8888", "status_code": 200, "status": -2,
+     "msg": "密码错误!"}
+]

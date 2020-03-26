@@ -1,0 +1,132 @@
+ [
+  {
+    "case_name": "登录成功",
+    "json_data": {
+      "mobile": "13800000002",
+      "password": "123456"
+    },
+    "status_code": 200,
+    "success": true,
+    "code": 10000,
+    "message": "操作成功"
+  },
+  {
+    "case_name": "密码错误",
+    "json_data": {
+      "mobile": "13800000002",
+      "password": "1234567"
+    },
+    "status_code": 200,
+    "success": false,
+    "code": 20001,
+    "message": "用户名或密码错误"
+  },
+  {
+    "case_name": "账号不存在",
+    "json_data": {
+      "mobile": "13900000002",
+      "password": "1234567"
+    },
+    "status_code": 200,
+    "success": false,
+    "code": 20001,
+    "message": "用户名或密码错误"
+  },
+  {
+    "case_name": "手机号码有英文字符",
+    "json_data": {
+      "mobile": "1390000AX02",
+      "password": "1234567"
+    },
+    "status_code": 200,
+    "success": false,
+    "code": 20001,
+    "message": "用户名或密码错误"
+  },
+  {
+    "case_name": "手机号码有特殊字符",
+    "json_data": {
+      "mobile": "1390000*(02",
+      "password": "1234567"
+    },
+    "status_code": 200,
+    "success": false,
+    "code": 20001,
+    "message": "用户名或密码错误"
+  },
+  {
+    "case_name": "手机号码为空",
+    "json_data": {
+      "mobile": "",
+      "password": "1234567"
+    },
+    "status_code": 200,
+    "success": false,
+    "code": 20001,
+    "message": "用户名或密码错误"
+  },
+  {
+    "case_name": "密码为空",
+    "json_data": {
+      "mobile": "13800000002",
+      "password": ""
+    },
+    "status_code": 200,
+    "success": false,
+    "code": 20001,
+    "message": "用户名或密码错误"
+  },
+  {
+    "case_name": "多参-多出1个参数",
+    "json_data": {
+      "mobile": "13800000002",
+      "password": "123456",
+      "sign": "123"
+    },
+    "status_code": 200,
+    "success": true,
+    "code": 10000,
+    "message": "操作成功"
+  },
+  {
+    "case_name": "少参-缺少mobile",
+    "json_data": {
+      "password": "123456"
+    },
+    "status_code": 200,
+    "success": false,
+    "code": 20001,
+    "message": "用户名或密码错误"
+  },
+  {
+    "case_name": "少参-缺少password",
+    "json_data": {
+      "mobile": "13800000002"
+    },
+    "status_code": 200,
+    "success": false,
+    "code": 20001,
+    "message": "用户名或密码错误"
+  },
+  {
+    "case_name": "无参",
+    "json_data": null,
+    "status_code": 200,
+    "success": false,
+    "code": 99999,
+    "message": "抱歉，系统繁忙，请稍后重试"
+  },
+  {
+    "case_name": "错误参数",
+    "json_data": {
+      "mboile": "13800000002",
+      "password": "123456"
+    },
+    "status_code": 200,
+    "success": false,
+    "code": 20001,
+    "message": "用户名或密码错误"
+  }
+]
+
+
