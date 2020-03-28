@@ -21,6 +21,7 @@ class TestLoginHr(unittest.TestCase):
     @classmethod
     def tearDownClass(cls):
         case_session_quit()
+        
 
     @parameterized.expand(getListData("/data/test_login_hr.json"))
     def test01_login_success(self, case_name, json_data, status_code, success, code, message):
