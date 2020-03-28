@@ -10,7 +10,8 @@ suite = unittest.TestSuite()
 suite.addTest(unittest.makeSuite(TestLoginHr))
 suite.addTest(unittest.makeSuite(TestEmpHr))
 
-filename = BASE_DIR + "/report/tpshop{}.html".format(time.strftime("%H%m%d%H%M%S"))
+# filename = BASE_DIR + "/report/tpshop{}.html".format(time.strftime("%H%m%d%H%M%S"))
+filename = BASE_DIR + "/report/ihmr.html"
 with open(filename, "wb") as f:
     runner = HTMLTestRunner(stream=f, verbosity=2,title="报告标题", description="报告描述")
     runner.run(suite)
